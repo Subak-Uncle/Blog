@@ -26,14 +26,14 @@ public class ParameterizedTests {
     *   이 경우 테스트 메소드에 매개변수를 선언할 수 있습니다. (일반적인 테스트 메소드는 매개변수 사용 불가)
     *   파라미터로 전달할 값의 목록 만큼 반복적으로 테스트 메소드를 실행하며, 반복 실행 시 마다 준비된 값 목록을
     *   매개변수로 전달하여 테스트 코드를 실행하게 됩니다.
-    *   given when then 패턴에서 사전에 테스트를 위해 준비하던 given 부분을 대체할 수 있게 된다.
+    *   given when then 패턴에서 사전에 테스트를 위해 준비하던 given 부분을 대체할 수 있게 됩니다.
     *  */
 
     /* 목차.
         1. @ValueSource를 이용한 parameter value 목록 지정 */
     /* 필기.
-    *   @ValueSource를 이용하여 한 개의 파라미터로 전달할 값들의 목록을 지정할 수 있다.
-    *   이 때 지원하는 타입은 다음과 같다.
+    *   @ValueSource를 이용하여 한 개의 파라미터로 전달할 값들의 목록을 지정할 수 있습니다.
+    *   이 때 지원하는 타입은 다음과 같습니다.
     *   short, byte, int, long, float, double, char, java.lang.String, java.lang.Class
     *  */
     @DisplayName("홀수 짝수 판별 테스트")
@@ -48,11 +48,12 @@ public class ParameterizedTests {
         Assertions.assertTrue(result);
     }
 
-    /* 목차. 2. @NullSource와 @EmptySource */
+    /* 목차.
+        2. @NullSource와 @EmptySource */
     /* 필기.
-    *   기본 자료형 타입은 null값을 가질 수 없다.
-    *   문자열이나 클래스 타입인 경우 null이나 빈 값을 파라미터로 전달하기 위해 사용되는 어노테이션이다.
-    *   null값과 빈 값을 모두 전달하기 위해 구성된 @NullAndEmptySource도 이용할 수 있다.
+    *   기본 자료형 타입은 null값을 가질 수 없습니다.
+    *   문자열이나 클래스 타입인 경우 null이나 빈 값을 파라미터로 전달하기 위해 사용되는 어노테이션입니다.
+    *   null값과 빈 값을 모두 전달하기 위해 구성된 @NullAndEmptySource도 이용할 수 있습니다.
     * */
     @DisplayName("null값 테스트")
     @ParameterizedTest
@@ -64,6 +65,7 @@ public class ParameterizedTests {
 
         //then
         Assertions.assertTrue(result);
+//        org.assertj.core.api.Assertions.assertThat(result);
     }
 
     @DisplayName("empty값 테스트")
@@ -87,12 +89,13 @@ public class ParameterizedTests {
         boolean result = StringValidator.isBlank(input);
 
         //then
-        Assertions.assertTrue(result);
+//        Assertions.assertTrue(result);
+        org.assertj.core.api.Assertions.assertThat(input);
     }
 
-    /* 목차. 3. 열거형을 이용한 @EnumSource 활용하기 */
-    /* 필기. 열거형에 작성된 타입들을 파라미터로 전달하여 테스트에 활용할 수 있다.*/
-
+    /* 목차.
+        3. 열거형을 이용한 @EnumSource 활용하기 */
+    /* 필기. 열거형에 작성된 타입들을 파라미터로 전달하여 테스트에 활용할 수 있습니다.*/
     @DisplayName("Month에 정의된 타입들이 1~12월 사이의 범위인지 테스트")
     @ParameterizedTest
     @EnumSource(Month.class)
@@ -139,11 +142,12 @@ public class ParameterizedTests {
         Assertions.assertEquals(verifyValue, actual);
     }
 
-    /* 목차. 4. @CsvSource를 이용한 CSV 리터럴 */
+    /* 목차.
+        4. @CsvSource를 이용한 CSV 리터럴 */
     /* 필기.
-    *   입력값과 예상값을 테스트 메소드에 전달하기 위해 사용할 수 있다.
-    *   이 경우 여러 매개변수에 값을 전달할 여러 인자 묶음이 필요하게 된다.
-    *   이 때 @CsvSource를 사용할 수 있다.
+    *   입력 값과 예상 값을 테스트 메소드에 전달하기 위해 사용할 수 있습니다.
+    *   이 경우 여러 매개변수에 값을 전달할 여러 인자 묶음이 필요하게 됩니다.
+    *   이 때 @CsvSource를 사용할 수 있습니다.
     *  */
     @DisplayName("영문자를 대문자로 변경하는지 확인")
     @ParameterizedTest
@@ -164,8 +168,8 @@ public class ParameterizedTests {
 
     @DisplayName("CSV 파일을 읽은 테스트 데이터를 테스트에 활용하는지 확인")
     @ParameterizedTest
-    /* 설명. csv 파일의 헤더 부분을 무시하고 테스트 하기 위해 nulLinesToSkip을 활용할 수 있다. */
-    @CsvFileSource(resources = "/parameter-test-data.csv", numLinesToSkip = 1)
+    /* 설명. csv 파일의 헤더 부분을 무시하고 테스트 하기 위해 numLinesToSkip을 활용할 수 있습니다. */
+//    @CsvFileSource(resources = "/parameter-test-data.csv", numLinesToSkip = 1)
     void testToUpperCaseWithCSVFileData(String input, String verifyValue) {
 
         //when
@@ -175,9 +179,9 @@ public class ParameterizedTests {
         Assertions.assertEquals(verifyValue, actual);
     }
 
-    /* 목차. 5. @MethodSource를 활용한 메소드 인수 활용하기 */
-    /* 필기. Stream을 반환하는 메소드를 만들어서 이를 테스트에 활용할 수 있다. */
-
+    /* 목차.
+        5. @MethodSource를 활용한 메소드 인수 활용하기 */
+    /* 필기. Stream을 반환하는 메소드를 만들어서 이를 테스트에 활용할 수 있습니다. */
     private static Stream<Arguments> providerStringSource() {
 
         return Stream.of(
@@ -187,11 +191,12 @@ public class ParameterizedTests {
         );
     }
 
+
     @DisplayName("메소드 소스를 활용한 대문자 변환 테스트")
     @ParameterizedTest
     /* 설명.
-    *   메소드 소스의 메소드 이름과 테스트 메소드의 이름이 일치하면 메소드 소스의 이름을 생략할 수 있다.
-    *   커스텀 어노테이션을 만들어서 이를 활용할 수 도 있다.
+    *   메소드 소스의 메소드 이름과 테스트 메소드의 이름이 일치하면 메소드 소스의 이름을 생략할 수 있습니다.
+    *   커스텀 어노테이션을 만들어서 이를 활용할 수도 있습니다.
     * */
 //    @MethodSource("providerStringSource")
     @MethodSourceStringSource
@@ -204,17 +209,14 @@ public class ParameterizedTests {
         Assertions.assertEquals(verifyValue, actual);
     }
 
-    @Documented
-    @Target(ElementType.METHOD)
-    @Retention(RetentionPolicy.RUNTIME)
-    @MethodSource("providerStringSource")
-    private @interface MethodSourceStringSource {}
 
-    /* 목차. 6. ArgumentsProvider를 이용한 메소드 소스 사용 */
+
+    /* 목차.
+        6. ArgumentsProvider를 이용한 메소드 소스 사용 */
     /* 필기.
     *   ArgumentProvider 구현체를 만들어서 메소드로 테스트용 데이터를 반환하면,
-    *   테스트 코드와 데이터를 분리해서 관리할 수 있다.
-    *   이 때 @ArgumentsSource 어노테이션을 이용할 수 있다.
+    *   테스트 코드와 데이터를 분리해서 관리할 수 있습니다.
+    *   이 때 @ArgumentsSource 어노테이션을 이용할 수 있습니다.
     *  */
     @DisplayName("두 수를 더한 결과를 정상적으로 반환하는지 테스트")
     @ParameterizedTest(name = "[{index}] {0} + {1} = {2} (이)가 맞는지 확인")

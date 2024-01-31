@@ -251,5 +251,5 @@ public class AssertJTests {
                         Tuple.tuple("홍길동", 20),
                         Tuple.tuple("유관순", 16)
                 );
-    }
+      }
 }

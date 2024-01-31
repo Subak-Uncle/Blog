@@ -43,3 +43,9 @@ o
 ?src/main/java/com/unclesubak/parameterized/StringValidator.java,b/0/b0b01ba83ff1c63c1bf9419e690b74875ab4088b
 r
 Bsrc/test/java/com/unclesubak/parameterized/ParameterizedTests.java,7/b/7b4b60971787ec6ebbf2c985bcf0add7c937ae0d
+x
+Hsrc/test/java/com/unclesubak/parameterized/MethodSourceStringSource.java,e/9/e90dfc2663ae00d886c290be85b0ef371be8a5c2
+~
+Nsrc/test/java/com/unclesubak/parameterized/SumTwoNumbersArgumentsProvider.java,9/3/939934dca20b0cfba46ee8fda584ebb0afb8d3f9
+;
+gradlew.bat,2/a/2a45a911a8f1836b0b6c5b758962572012d8f8c3
