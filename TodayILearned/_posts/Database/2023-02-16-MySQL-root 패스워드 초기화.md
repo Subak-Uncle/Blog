@@ -1,0 +1,1 @@
+https://kwangkyun-world.tistory.com/entry/mysql-80-패스워드-변경-비밀번호-초기화-mac
