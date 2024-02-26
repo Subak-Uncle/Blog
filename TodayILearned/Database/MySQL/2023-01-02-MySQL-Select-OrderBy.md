@@ -1,23 +1,3 @@
----
-layout: single
-title: "[DataBase] 1일 차 : select, order by"
-
-categories: DATABASE
-tags: [DataBase, MySQL, jekyll]
-
-toc: true # Table of Contents : 목차 사용 여부
-toc_sticky: true
-
-author_profile: false
-date: 2023-01-02
-last_modified_at: 2023-07-03
-
-sidebar:
-  nav: "docs"
----
-
-
-
 # 1. SELECT
 
 > 😎 SELECT절은 MySQL의 가장 기본적인 명령어로 특정 테이블에서 원하는 데이터를 조회해서 가져오는데 사용 된다.
