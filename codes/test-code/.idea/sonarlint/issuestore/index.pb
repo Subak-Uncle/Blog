@@ -31,3 +31,7 @@ p
 @src/test/java/com/unclesubak/jupiter/jupiterAssertionsTests.java,e/d/ed8ad9f3d223df099168056f5d417f984c33dc20
 q
 Asrc/main/java/com/unclesubak/jupiter/PositiveNumberValidator.java,3/4/342a1220d6590f18912459be66b85f8469b99d82
+`
+0src/main/java/com/unclesubak/assertj/Member.java,a/a/aa3a1c47e392c27ee634b15f29cf0f67db3fd3dd
+f
+6src/test/java/com/unclesubak/assertj/AssertJTests.java,b/0/b09813d3313fc87346829fecd59659282c3e4233
