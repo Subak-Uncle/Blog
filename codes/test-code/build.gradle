@@ -17,6 +17,9 @@ dependencies {
 
     // assertj
     testImplementation 'org.assertj:assertj-core:3.24.2'
+
+    // parameterized
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.8.2'
 }
 
 test {

@@ -54,7 +54,7 @@ public class AssertJTests {
 
     /* 목차.
         2. 숫자 테스트 하기 */
-    /* 필기. 숫자 또한 일치여부가 아닌 범위값도 검증하는 단정 메소드를 통해 다양한 테스트를 수행할 수 있습니다. */
+    /* 필기. 숫자 또한 일치 여부가 아닌 범위 값도 검증하는 단정 메소드를 통해 다양한 테스트를 수행할 수 있습니다. */
     @Test
     @DisplayName("숫자 테스트 하기")
     void testIntegerValidation() {
@@ -253,4 +253,3 @@ public class AssertJTests {
                 );
     }
 }
-ㄹㄹㄹ
