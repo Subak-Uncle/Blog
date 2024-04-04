@@ -1,6 +1,5 @@
 package com.jyujyu.dayonetest.service;
 
-import com.jyujyu.dayonetest.MyCalculator;
 import com.jyujyu.dayonetest.dto.response.ExamFailStudentResponse;
 import com.jyujyu.dayonetest.dto.response.ExamPassStudentResponse;
 import com.jyujyu.dayonetest.model.*;
@@ -12,7 +11,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 
 import java.util.List;
@@ -151,8 +149,6 @@ public class StudentScoreServiceMockTest {
                 expectedStudent2,
                 notExpectedStudent3
         )); // 필기. -> "studentPassRepository.findAll이 실행된다면 설정한 값으로 리턴해준다."고 고정시키는 것임.
-
-
 
         // when
         var expectResponses =  List.of(expectedStudent1, expectedStudent2)

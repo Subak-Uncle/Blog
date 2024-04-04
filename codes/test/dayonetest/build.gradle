@@ -32,6 +32,9 @@ dependencies {
 
     // mock
     testImplementation "org.mockito:mockito-core:3.+"
+
+    // 컨테이너 테스트
+    testImplementation "org.testcontainers:testcontainers:1.19.0"
 }
 
 tasks.named('test') {

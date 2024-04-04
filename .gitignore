@@ -39,3 +39,4 @@ out/
 ### local environment
 /infra/local/dbdata
 **/infra/local/dbdata
+**/infra
