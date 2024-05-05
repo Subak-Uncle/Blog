@@ -1,23 +1,3 @@
----
-layout: single
-title: "[JAVA] double, object 형 변환"
-
-categories: JAVA
-tags: [java, jekyll]
-
-toc: true # Table of Contents : 목차 사용 여부
-toc_sticky: true
-
-author_profile: false
-date: 2023-07-14
-last_modified_at: 2023-07-14
-
-sidebar:
-  nav: "docs"
----
-
-
-
 # Double 형 변환
 
 ## String -> Double
