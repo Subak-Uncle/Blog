@@ -1,20 +1,3 @@
----
-layout: single
-title: "[Algorithm] 1일 차 : 선택 정렬, 버블 정렬"
-
-categories: Algorithm
-tags: [java, Algorithm, jekyll]
-
-toc: true # Table of Contents : 목차 사용 여부
-toc_sticky: true
-
-author_profile: false
-date: 2023-01-09
-last_modified_at: 2023-01-11
-sidebar:
-  nav: "docs"
----
-
 ## Algorithm
 
 ## 버블정렬
