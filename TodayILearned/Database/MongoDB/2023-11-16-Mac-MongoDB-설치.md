@@ -1,22 +1,3 @@
----
-layout: single
-title: "[MAC] MongoDB 설치 방법"
-
-categories: MAC
-tags: [MAC, MongoDB]
-
-toc: true # Table of Contents : 목차 사용 여부
-toc_sticky: true
-
-author_profile: false
-date: 2023-11-16
-last_modified_at: 2023-11-16
-sidebar:
-  nav: "docs"
-
-
----
-
 # Mac M1 MongoDB 설치 방법 ( brew )
 
 
