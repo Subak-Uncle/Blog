@@ -52,10 +52,9 @@ assignees: ''
 <!--코드 수정 및 리팩토링에 관련된 이슈 설명-->
 
 ✅TODO
--
-- [ ] todo
-- [ ] todo
-- [ ] todo
+- [ ] <!--todo-->
+- [ ] <!--todo-->
+- [ ] <!--todo-->
 
 
 🐾ETC
@@ -90,9 +89,9 @@ assignees: ''
 
 ✅TODO
 -
-- [ ] todo
-- [ ] todo
-- [ ] todo
+- [ ] <!--todo-->
+- [ ] <!--todo-->
+- [ ] <!--todo-->
 
 🐾ETC
 -
@@ -127,9 +126,3 @@ assignees: ''
 👪담당자
 -
 ~~~
-
-
-
-
-
-기획했던 것으로부터의 변화 : 

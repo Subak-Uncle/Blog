@@ -53,11 +53,6 @@
     "description": "코드 리팩토링"
 },
 {
-    "name": "🙋‍♂️ Question",
-    "color": "9ED447",
-    "description": "Further information is requested"
-},
-{
     "name": "🎯  Test",
     "color": "ccffc4",
     "description": "test 관련(storybook, jest...)"
@@ -106,51 +101,4 @@ npx i github-label-sync
 ~~~
 
 깃허브 파일 설치할 것이냐고 물어본다. y를 누르면 적용되는 것을 확인할 수 있다!!
-
-
-
-~~~json
-{
-    "status": 200,
-    "message": "다이어리 전체 조회 성공",
-    "data": [
-        {
-            "diary_no": 1,
-            "pet_no": 1,
-            "pet_program_no": 1,
-            "diary_content": "양고기 먹는 창식이",
-            "fodder_name": "지위픽 양고기",
-            "pet_health": 1,
-            "diary_photo_left_eye": "왼쪽 눈 사진",
-            "diary_photo_right_eye": "오른쪽 눈 사진",
-            "diary_photo_left_ear": "왼쪽 귀 사진",
-            "diary_photo_right_ear": "오른쪽 귀 사진",
-            "diary_photo_anal": "항문 사진",
-            "diary_photo_etc": "기타 사진",
-            "create_date": "2023-10-18T12:54:44.000Z",
-            "update_date": null,
-            "delete_date": null,
-            "diary_status": 1
-        },
-        {
-            "diary_no": 2,
-            "pet_no": 1,
-            "pet_program_no": 1,
-            "diary_content": "양고기 먹는 창식이2",
-            "fodder_name": "지위픽 양고기",
-            "pet_health": 1,
-            "diary_photo_left_eye": "왼쪽 눈 사진",
-            "diary_photo_right_eye": "오른쪽 눈 사진",
-            "diary_photo_left_ear": "왼쪽 귀 사진",
-            "diary_photo_right_ear": "오른쪽 귀 사진",
-            "diary_photo_anal": "항문 사진",
-            "diary_photo_etc": "기타 사진",
-            "create_date": "2023-11-15T15:00:00.000Z",
-            "update_date": null,
-            "delete_date": null,
-            "diary_status": 1
-        }
-    ]
-}
-~~~
 
