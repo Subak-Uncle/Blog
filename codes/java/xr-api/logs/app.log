@@ -1,0 +1,19 @@
+nohup: ignoring input
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.8)
+
+2024-08-02T14:48:46.624+09:00  INFO 1246472 --- [           main] k.helloworldlabs.xrapi.XrApiApplication  : Starting XrApiApplication v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1246472 (/mnt/c/workspace/xr-api/build/libs/xr-api-0.0.1-SNAPSHOT.jar started by root in /mnt/c/workspace/xr-api/build/libs)
+2024-08-02T14:48:46.629+09:00  INFO 1246472 --- [           main] k.helloworldlabs.xrapi.XrApiApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-08-02T14:48:48.228+09:00  INFO 1246472 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-02T14:48:48.243+09:00  INFO 1246472 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-02T14:48:48.243+09:00  INFO 1246472 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-02T14:48:48.285+09:00  INFO 1246472 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-02T14:48:48.287+09:00  INFO 1246472 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1493 ms
+2024-08-02T14:48:48.725+09:00  INFO 1246472 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-08-02T14:48:48.747+09:00  INFO 1246472 --- [           main] k.helloworldlabs.xrapi.XrApiApplication  : Started XrApiApplication in 2.804 seconds (process running for 3.487)
