@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.io.ClassPathResource;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 @SpringBootTest
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -98,7 +99,8 @@ public class IOStreamTests {
     void testFileReader() throws IOException {
 
         // given
-        FileReader fileReader = new FileReader(resource.getFile());
+        FileReader fileReader = new FileReader(resource.getFile(), StandardCharsets.UTF_8);
+//        InputStreamReader fileReader = new InputStreamReader(new FileInputStream(resource.getFile()), StandardCharsets.UTF_8);
         int data;
 
         // when & then

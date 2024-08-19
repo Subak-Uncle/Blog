@@ -1,0 +1,18 @@
+
+spring:
+  web:
+    resources:
+      add-mappings: false
+
+  servlet:
+    multipart:
+      max-file-size: 2GB
+      max-request-size: 2GB
+server:
+  port: 9000
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
